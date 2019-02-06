@@ -19,3 +19,31 @@ menuButton.addEventListener('click', toggleMenu,
 
   console.log('menu button event Listener is ', menuButton )
   );
+
+
+// Just starting to mess with animation
+
+menuButton.forEach( button => {
+
+  button.addEventListener('mouseover', e => {
+    console.log(`button mouseOVER  fired a click event!`);
+    // ALL about stopping events from bubbling
+    e.stopPropagation();
+    TweenMax.to(e.currentTarget, 1, {
+      width:150,
+      ease:Bounce.easeOut
+    });
+  });
+
+  button.addEventListener('mouseout', e => {
+    console.log(`button mouseOUT fired a click event!`);
+    // ALL about stopping events from bubbling
+    e.stopPropagation();
+    TweenMax.to(e.currentTarget, 1, {
+      width:200,
+      ease:Bounce.easeOut
+    });
+  });
+
+
+});
