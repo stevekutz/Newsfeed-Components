@@ -16,10 +16,23 @@ class Article {
     this.expandButton.textContent = 'expand';
 
     // Set a click handler on the expandButton reference, calling the expandArticle method.
-    this.expandButton.addEventListener('click', () => this.expandArticle());
+    this.expandButton.addEventListener('click', () => this.expandArticle() );
 
-    //this.date_p = this.domElement.querySelectorAll('.date');
-    // console.log('date_p QSA gives back ', this.date_p);
+
+    this.date_p = this.domElement.querySelectorAll('.date');
+    console.log('these ARE ALL date_p NODELIST vals ', this.date_p);
+    // make it date react  to mouse pointer
+     this.date_p.forEach(date =>
+
+     {
+       date.style.cursor = 'pointer';
+       date.addEventListener('dblclick', () => this.expandArticle());
+     }
+     );
+
+      console.log('this.date_p with cursor SET ', this.date_p);
+
+
 
   }
 
