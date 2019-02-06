@@ -17,13 +17,14 @@ class Article {
 
   expandArticle() {
     // Using our reference to the domElement, toggle a class to expand or hide the article.
-      console.log('I am groot! ');
+      this.expandButton.textContent = 'close dat!';
       console.log('expandButton inside expandArticle after click ', this.expandButton);
       console.log('this.domElement inside exapndArticle after click ', this.domElement);
       // while inside, toggle class article-open on top of article class
 
       this.domElement.classList.toggle('article-open');
- 
+      // STRATEGY 1 - set button content on state of article-open
+
 
 
   }
