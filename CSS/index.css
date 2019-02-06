@@ -74,6 +74,7 @@
   border-radius: 10px;
   background-color: white;
   position: relative;
+  height: 50px;
   min-height: 5px;
   overflow: hidden;
   box-shadow: 2px 2px 2px lightgrey;
@@ -103,8 +104,7 @@
   background-color: white;
 }
 .article-open {
-  min-height: 50px;
-  overflow: hidden;
+  height: auto;
 }
 html,
 body {
