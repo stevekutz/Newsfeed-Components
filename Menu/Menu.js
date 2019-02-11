@@ -15,14 +15,14 @@ console.log('menuButton from QS is ', menuButton);
 
 // Using your menuButton reference, add a click handler that calls toggleMenu
 
-menuButton.addEventListener('click', toggleMenu,
+menuButton.addEventListener('click', toggleMenu
 
-  console.log('menu button event Listener is ', menuButton )
+ // console.log('menu button event Listener is ', menuButton )
   );
 
 
 // Just starting to mess with animation
-
+/*
 menuButton.forEach( button => {
 
   button.addEventListener('mouseover', e => {
@@ -47,3 +47,4 @@ menuButton.forEach( button => {
 
 
 });
+*/
